@@ -6,7 +6,6 @@ type NavTVProps = {
 
 const NavTV:FC<NavTVProps> = ({ className }) => (
   <svg
-    // className={router.pathname == '/tv' ? 'active-link' : 'icon-nav'}
     className={className}
     fill="currentColor"
     width="1em"

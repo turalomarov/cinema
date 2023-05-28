@@ -5,7 +5,6 @@ type NavMovieProps = {
 };
 const NavMovie:FC<NavMovieProps> = ({ className }) => (
   <svg
-      // className={router.pathname == '/movie' ? 'active-link' : 'icon-nav'}
     className={className}
     fill="currentColor"
     width="1em"

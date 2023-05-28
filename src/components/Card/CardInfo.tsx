@@ -61,7 +61,7 @@ const CardInfo:FC<CardInfoProps> = ({
       className={
         trending
           ? 'md:heading-sm w-[200px] truncate text-sm font-bold capitalize sm:w-[420px] md:h-6'
-          : 'md:heading-xs truncate text-sm font-bold capitalize' // w-[150px] sm:w-[180px] md:w-[200px] lg:w-[268px]
+          : 'md:heading-xs truncate text-sm font-bold capitalize'
       }
     >
       {children}

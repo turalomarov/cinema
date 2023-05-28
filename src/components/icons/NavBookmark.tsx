@@ -1,5 +1,3 @@
-// import { useRouter } from 'next/router'
-
 import { FC } from 'react';
 
 interface NavBookmarkProps {

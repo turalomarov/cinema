@@ -6,7 +6,6 @@ type NavHomeProps = {
 
 const NavHome:FC<NavHomeProps> = ({ className }) => (
   <svg
-      // className={router.pathname == '/' ? 'active-link' : 'icon-nav'}
     className={className}
     fill="currentColor"
     width="1em"

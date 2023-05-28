@@ -6,7 +6,7 @@ interface GenreProps {
   genres: Array<Genre>;
   category: 'movie' | 'tv';
 }
-// Todo maybe remove component
+
 const Genres:FC<GenreProps> = ({ genres, category }) => (
   <section className="mb-10 flex flex-wrap justify-between text-app-white">
     {genres.map((genre) => (

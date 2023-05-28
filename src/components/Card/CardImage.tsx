@@ -19,8 +19,8 @@ const CardImage:FC<CardImageProps> = ({
     <div
       className={
         trending
-          ? 'relative h-[140px] w-[240px] sm:h-[230px] sm:w-[470px]' // after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:bg-app-dark-blue after:opacity-50 after:content-[""]
-          : 'relative h-[133px] md:h-[140px] lg:h-[174px]' //
+          ? 'relative h-[140px] w-[240px] sm:h-[230px] sm:w-[470px]'
+          : 'relative h-[133px] md:h-[140px] lg:h-[174px]'
       }
     >
       <ProgressiveImage

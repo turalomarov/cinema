@@ -11,7 +11,7 @@ interface MediaInfoProps {
   status: string;
   releaseDate?: string;
 }
-// Todo fix spoken languages maybe find iso lang by key
+
 const MediaInfo:FC<MediaInfoProps> = ({
   firstAir,
   lastAir,
