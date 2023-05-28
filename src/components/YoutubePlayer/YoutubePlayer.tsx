@@ -3,13 +3,14 @@ import {
 } from 'react';
 import ReactPlayer, { YouTubePlayerProps } from 'react-player/youtube';
 import { Link } from 'react-router-dom';
+import classNames from 'classnames';
 import {
-  BsFillPlayFill, BsPauseCircleFill, GoMute, GoUnmute, ImInfo,
-} from 'react-icons/all';
+  BsFillPlayFill, BsPauseCircleFill,
+} from 'react-icons/bs';
+import { ImInfo } from 'react-icons/im';
 import { useFetch } from '@app/hooks';
 import { MediaType } from '@app/api/tmdb/types';
 import noTrailer from '@app/assets/no-trailer.webp';
-import classNames from 'classnames';
 
 interface YoutubePlayerProps extends YouTubePlayerProps {
   id: number;

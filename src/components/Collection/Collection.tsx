@@ -4,7 +4,7 @@ import {
 import {
   AiOutlineArrowLeft,
   AiOutlineArrowRight,
-} from 'react-icons/all';
+} from 'react-icons/ai';
 import Heading from '../Heading';
 
 interface CollectionProps extends PropsWithChildren {

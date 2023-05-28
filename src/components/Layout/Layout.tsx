@@ -4,7 +4,7 @@ import {
 import {
   Outlet, useLocation, useNavigate, useSearchParams,
 } from 'react-router-dom';
-import { FaGithub } from 'react-icons/all';
+import { FaGithub } from 'react-icons/fa';
 import { GITHUB_PROJECT_NAME } from '@app/config';
 import SearchBar from '../SearchBar';
 import Navigation from '../Navigation';
