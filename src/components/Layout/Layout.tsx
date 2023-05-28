@@ -5,10 +5,10 @@ import {
   Outlet, useLocation, useNavigate, useSearchParams,
 } from 'react-router-dom';
 import { FaGithub } from 'react-icons/all';
+import { GITHUB_PROJECT_NAME } from '@app/config';
 import SearchBar from '../SearchBar';
 import Navigation from '../Navigation';
 import Footer from '../Footer';
-import {GITHUB_PROJECT_NAME} from '@app/config';
 
 const Layout:FC<PropsWithChildren> = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -36,7 +36,7 @@ const Layout:FC<PropsWithChildren> = () => {
       searchParams.delete('query');
     }
   }, [setSearchParams, location, navigate, returnLocation, searchParams]);
-  console.log(GITHUB_PROJECT_NAME)
+
   return (
     <div className="text-app-white flex flex-col">
       <div className="lg:flex">
@@ -51,7 +51,7 @@ const Layout:FC<PropsWithChildren> = () => {
           See project on
           <a
             target="_blank"
-             href={`https://github.com/turalomarov/${GITHUB_PROJECT_NAME}`}
+            href={`https://github.com/turalomarov/${GITHUB_PROJECT_NAME}`}
             rel="noreferrer"
           >
             <FaGithub className="text-app-white text-base" />
