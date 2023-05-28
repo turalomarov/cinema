@@ -7,6 +7,7 @@ import classNames from 'classnames';
 import {
   BsFillPlayFill, BsPauseCircleFill,
 } from 'react-icons/bs';
+import { GoMute, GoUnmute } from 'react-icons/go';
 import { ImInfo } from 'react-icons/im';
 import { useFetch } from '@app/hooks';
 import { MediaType } from '@app/api/tmdb/types';
