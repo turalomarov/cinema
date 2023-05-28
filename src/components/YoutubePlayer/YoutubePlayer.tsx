@@ -67,7 +67,7 @@ const YoutubePlayer:FC<YoutubePlayerProps> = ({
   }, [muted]);
 
   const youtubeKey = useMemo(
-    () => data?.results?.findLast((video) => allowedVideos.includes(video.type))?.key,
+    () => data?.results?.find((video) => allowedVideos.includes(video.type))?.key,
     [data],
   );
 
