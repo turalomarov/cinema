@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import Title from '@app/components/Title';
 import CollectionSearch from '@app/components/CollectionSearch';
@@ -18,10 +17,6 @@ const Category = () => {
   } = useFetchMediaList(mediaType as MediaType, category?.replaceAll('-', '_') || '');
 
   const ref = useInfiniteScroll(fetchNextPage, hasNextPage);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   if (!data || isLoading) {
     return <Loader />;

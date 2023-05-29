@@ -19,7 +19,7 @@ const CardImage:FC<CardImageProps> = ({
     <div
       className={
         trending
-          ? 'relative h-[140px] w-[240px] sm:h-[230px] sm:w-[470px]'
+          ? 'relative h-[140px] w-full sm:h-[230px] sm:w-[470px]'
           : 'relative h-[133px] md:h-[140px] lg:h-[174px]'
       }
     >

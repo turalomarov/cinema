@@ -17,7 +17,7 @@ const MediaRating:FC<MediaRatingProps> = ({ rating }) => {
       <p className="mb-2 mr-2 text-4xl font-medium md:mr-4 md:mb-0">{formattedRating}</p>
       {Array.from({ length: 10 })
         .map((_, index) => ({ id: index + 1 }))
-        .map((item, index) => (index + 1 <= rating
+        .map((item, index) => (index + 1 <= Number(formattedRating)
           ? <FaStar key={item.id} />
           : <FaRegStar key={item.id} />))}
     </div>

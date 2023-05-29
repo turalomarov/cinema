@@ -5,6 +5,7 @@ import {
   AiOutlineArrowLeft,
   AiOutlineArrowRight,
 } from 'react-icons/ai';
+import { scrollTo } from 'seamless-scroll-polyfill';
 import Heading from '../Heading';
 
 interface CollectionProps extends PropsWithChildren {
@@ -38,20 +39,23 @@ const Collection:FC<CollectionProps> = ({
     if (rowRef.current) {
       const { scrollLeft, clientWidth, scrollWidth } = rowRef.current;
 
-      let scrollTo = direction === 'left'
+      let scroll = direction === 'left'
         ? scrollLeft - clientWidth / 1.5
         : scrollLeft + clientWidth / 1.5;
 
       // if reached the end return to start
       if (direction === 'right' && scrollWidth - clientWidth === scrollLeft) {
-        scrollTo = 0;
+        scroll = 0;
       }
 
-      if (scrollTo <= 0) {
+      if (scroll <= 0) {
         setIsMoved(false);
       }
 
-      rowRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
+      scrollTo(rowRef.current, {
+        behavior: 'smooth',
+        left: scroll,
+      });
     }
   }, []);
 
