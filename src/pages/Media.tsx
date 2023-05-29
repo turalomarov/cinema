@@ -84,7 +84,7 @@ const Media = () => {
         {!!selectedGenres.length && <MediaGenres genres={selectedGenres} />}
       </section>
       {
-        searchParams.size > 0 && (
+        searchParams.has('genres') && (
           <>
             <CollectionSearch>
               {discoverData?.pages.map((page) => (
@@ -111,7 +111,7 @@ const Media = () => {
           </>
         )
        }
-      {searchParams.size === 0 && mediaTypeComponent}
+      {!searchParams.has('genres') && mediaTypeComponent}
     </>
   );
 };

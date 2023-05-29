@@ -2,7 +2,8 @@ import {
   ChangeEvent, FC, useCallback, useRef, useState,
 } from 'react';
 import classNames from 'classnames';
-import useOnClickOutside from '@app/hooks/useOnClickOutside';
+
+import { useOnClickOutside } from '@app/hooks';
 import SearchIcon from '../icons/SearchIcon';
 
 interface SearchBarProps {
